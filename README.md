@@ -4,7 +4,7 @@ Use the Watson Assistant NLP in wingbot chatbot
 ## Installing
 
 ```
-npm i -S wingbot-trasknlp
+npm i -S wingbot-watson
 ```
 
 ## Usage
@@ -15,9 +15,10 @@ const { WatsonNlpModel } = require('wingbot-watson');
 const { ai } = require('wingbot');
 
 const watsonNlpModel = new WatsonNlpModel({
-    model: 'name-of-your-model',
-    subscribtionKey: '<your subscribtion key>',
-    apiKey: '<your api key>'
+    username: '<your API username>',
+    password: '<your API password>',
+    workspaceId: '<your workspace id>',
+    serviceUrl: WatsonNlpModel.SERVICE_URL_FRANKFURT // WatsonNlpModel.SERVICE_URL_LONDON
 });
 
 ai.register(watsonNlpModel);
@@ -51,6 +52,13 @@ ai.register(watsonNlpModel);
 AI Plugin Model
 
 **Kind**: global class  
+
+* [WatsonNlpModel](#WatsonNlpModel)
+    * [new WatsonNlpModel(options, [log])](#new_WatsonNlpModel_new)
+    * [.SERVICE_URL_DALLAS](#WatsonNlpModel.SERVICE_URL_DALLAS) : <code>string</code>
+    * [.SERVICE_URL_FRANKFURT](#WatsonNlpModel.SERVICE_URL_FRANKFURT) : <code>string</code>
+    * [.SERVICE_URL_LONDON](#WatsonNlpModel.SERVICE_URL_LONDON) : <code>string</code>
+
 <a name="new_WatsonNlpModel_new"></a>
 
 ### new WatsonNlpModel(options, [log])
@@ -62,9 +70,21 @@ AI Plugin Model
 | options.password | <code>string</code> | the API password |
 | options.workspaceId | <code>string</code> | workspace ID |
 | [options.cacheSize] | <code>number</code> |  |
-| [options.serviceUrl] | <code>string</code> |  |
+| [options.serviceUrl] | <code>string</code> | model url, default Dallas |
 | [log] | <code>Object</code> | logging function |
 
+<a name="WatsonNlpModel.SERVICE_URL_DALLAS"></a>
+
+### WatsonNlpModel.SERVICE\_URL\_DALLAS : <code>string</code>
+**Kind**: static property of [<code>WatsonNlpModel</code>](#WatsonNlpModel)  
+<a name="WatsonNlpModel.SERVICE_URL_FRANKFURT"></a>
+
+### WatsonNlpModel.SERVICE\_URL\_FRANKFURT : <code>string</code>
+**Kind**: static property of [<code>WatsonNlpModel</code>](#WatsonNlpModel)  
+<a name="WatsonNlpModel.SERVICE_URL_LONDON"></a>
+
+### WatsonNlpModel.SERVICE\_URL\_LONDON : <code>string</code>
+**Kind**: static property of [<code>WatsonNlpModel</code>](#WatsonNlpModel)  
 <a name="Entity"></a>
 
 ## Entity : <code>object</code>

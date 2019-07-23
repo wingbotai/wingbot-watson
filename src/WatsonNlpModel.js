@@ -66,7 +66,7 @@ class WatsonNlpModel extends CachedModel {
      * @param {string} options.password - the API password
      * @param {string} options.workspaceId - workspace ID
      * @param {number} [options.cacheSize]
-     * @param {string} [options.serviceUrl]
+     * @param {string} [options.serviceUrl] - model url, default Dallas
      * @param {{ warn: Function }} [log] - logging function
      */
     constructor (options, log = console) {
@@ -148,8 +148,24 @@ class WatsonNlpModel extends CachedModel {
 
 }
 
+/**
+ * @type {string}
+ * @static
+ */
 WatsonNlpModel.SERVICE_URL_DALLAS = SERVICE_URL_DALLAS;
+
+
+/**
+ * @type {string}
+ * @static
+ */
 WatsonNlpModel.SERVICE_URL_FRANKFURT = SERVICE_URL_FRANKFURT;
+
+
+/**
+ * @type {string}
+ * @static
+ */
 WatsonNlpModel.SERVICE_URL_LONDON = SERVICE_URL_LONDON;
 
 module.exports = WatsonNlpModel;

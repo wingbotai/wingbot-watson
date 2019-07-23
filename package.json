@@ -1,6 +1,6 @@
 {
   "name": "wingbot-watson",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Wingbot plugin for Watson Assistant NLP",
   "main": "src/main.js",
   "scripts": {
