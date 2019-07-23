@@ -8,27 +8,27 @@ const request = require('request-promise-native');
 const assert = require('assert');
 
 /**
- * @typedef {Object} Entity
+ * @typedef {object} Entity
  * @param {string} entity
  * @param {string} value
  * @param {number} score
  */
 
 /**
- * @typedef {Object} Intent
+ * @typedef {object} Intent
  * @param {string} intent
  * @param {number} score
  * @param {Entity[]} [entities]
  */
 
 /**
- * @typedef {Object} Result
+ * @typedef {object} Result
  * @param {Entity[]} entities
  * @param {Intent[]} intents
  */
 
 /**
- * @typedef {Object} WatsonEntity
+ * @typedef {object} WatsonEntity
  * @private
  * @param {string} entity
  * @param {string} value
@@ -36,14 +36,14 @@ const assert = require('assert');
  */
 
 /**
- * @typedef {Object} WatsonIntent
+ * @typedef {object} WatsonIntent
  * @private
  * @param {string} intent
  * @param {number} confidence
  */
 
 /**
- * @typedef {Object} WatsonResponse
+ * @typedef {object} WatsonResponse
  * @private
  * @param {string} sentence
  * @param {string} intent
@@ -61,7 +61,7 @@ const SERVICE_URL_LONDON = 'https://gateway-lon.watsonplatform.net/assistant/api
 class WatsonNlpModel extends CachedModel {
 
     /**
-     * @param {Object} options
+     * @param {object} options
      * @param {string} options.username - the API username
      * @param {string} options.password - the API password
      * @param {string} options.workspaceId - workspace ID

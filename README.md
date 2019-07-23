@@ -37,11 +37,11 @@ ai.register(watsonNlpModel);
 ## Typedefs
 
 <dl>
-<dt><a href="#Entity">Entity</a> : <code>Object</code></dt>
+<dt><a href="#Entity">Entity</a> : <code>object</code></dt>
 <dd></dd>
-<dt><a href="#Intent">Intent</a> : <code>Object</code></dt>
+<dt><a href="#Intent">Intent</a> : <code>object</code></dt>
 <dd></dd>
-<dt><a href="#Result">Result</a> : <code>Object</code></dt>
+<dt><a href="#Result">Result</a> : <code>object</code></dt>
 <dd></dd>
 </dl>
 
@@ -57,7 +57,7 @@ AI Plugin Model
 
 | Param | Type | Description |
 | --- | --- | --- |
-| options | <code>Object</code> |  |
+| options | <code>object</code> |  |
 | options.username | <code>string</code> | the API username |
 | options.password | <code>string</code> | the API password |
 | options.workspaceId | <code>string</code> | workspace ID |
@@ -67,7 +67,7 @@ AI Plugin Model
 
 <a name="Entity"></a>
 
-## Entity : <code>Object</code>
+## Entity : <code>object</code>
 **Kind**: global typedef  
 
 | Param | Type |
@@ -78,7 +78,7 @@ AI Plugin Model
 
 <a name="Intent"></a>
 
-## Intent : <code>Object</code>
+## Intent : <code>object</code>
 **Kind**: global typedef  
 
 | Param | Type |
@@ -89,7 +89,7 @@ AI Plugin Model
 
 <a name="Result"></a>
 
-## Result : <code>Object</code>
+## Result : <code>object</code>
 **Kind**: global typedef  
 
 | Param | Type |
